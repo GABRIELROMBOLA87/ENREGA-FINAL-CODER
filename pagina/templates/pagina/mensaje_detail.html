@@ -3,16 +3,19 @@
 {% block contenido%}
 
       
-    <h3>"{{object.Repuesto}}"</h3>
-    <p><b>Vehiculo</b> {{object.Vehiculo}}</p>    
-    <p><b>Detalle:</b> {{object.Detalle}}</p>
-    <p><b>Precio:</b> {{object.Precio}}</p>
-        
+    <h3>{{object.Mensaje}}</h3>
+    <p><b>Nombre</b> {{object.nombre}}</p>    
+    <p><b>Fecha:</b> {{object.enviado_el}}</p>
+    <p><b>Email:</b> {{object.email}}</p>
+    <p><b>Mensaje:</b> {{object.texto}}</p>
+
+
+
     <div>
         <img height="256" src="{{object.imagen.url}}">
     </div>
 
-        <a href="/pagina/listar/">Volver a lista</a>
+        <li><a href="/pagina/listar/">Volver a lista</a></li>
 
     </div>   
 {% endblock %}
