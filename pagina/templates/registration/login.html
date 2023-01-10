@@ -1,0 +1,11 @@
+{% extends 'pagina/base.html' %}
+
+{% block contenido%}
+
+<form method="POST">
+    {% csrf_token %}
+    <center>{{form.as_p}} </center>   
+    <center><p><input type="submit" value="Ingresar"></p></center>
+</form>
+
+{% endblock %}

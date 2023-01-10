@@ -1,0 +1,18 @@
+{% extends 'pagina/base.html' %}
+
+{% block contenido%}
+
+      
+    <h3>"{{object.Repuesto}}"</h3>
+    <p><b>Vehiculo</b> {{object.Vehiculo}}</p>    
+    <p><b>Detalle:</b> {{object.Detalle}}</p>
+    <p><b>Precio:</b> {{object.Precio}}</p>
+        
+    <div>
+        <img height="256" src="{{object.imagen.url}}">
+    </div>
+
+        <a href="/pagina/listar/">Volver a lista</a>
+
+    </div>   
+{% endblock %}
