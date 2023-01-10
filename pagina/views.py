@@ -6,8 +6,8 @@ from pagina.forms import UsuarioForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import LoginView, LogoutView
-from pagina.models import Avatar, Post, Mensaje
-from django.contrib.auth.admin import User  
+from pagina.models import Post, Mensaje, Avatar
+from django.contrib.auth.admin import User
 # Create your views here.
 
 def index(request):
