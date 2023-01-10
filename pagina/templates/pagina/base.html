@@ -39,6 +39,7 @@
                         
                         {% if user.is_authenticated %}
                             
+                            <li class="nav-item"><a class="nav-link" href="{% url 'pagina_infopersonal' %}">Mi info Personal</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'pagina_listar' %}">Admin Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'pagina_logout' %}">Salir</a></li>
                             

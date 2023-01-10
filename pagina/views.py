@@ -14,6 +14,9 @@ def index(request):
     posts = Post.objects.order_by('Precio').all()
     return render(request, "pagina/index.html", {"posts": posts})
 
+def infoper(request):
+    return render(request, "pagina/mi_info_personal.html", {})
+
 
 class PostDetalle(LoginRequiredMixin, DetailView):
     model = Post

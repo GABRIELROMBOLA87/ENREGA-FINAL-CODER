@@ -20,12 +20,13 @@ from django.urls import path
 from pagina.views import (index, PostListar, PostCrear,
                                PostActualizar, PostBorrar, PostDetalle,
                                UserSignUp, UserLogin, UserLogout, AvatarActualizar,
-                               UserActualizar, MensajeCrear, MensajeDetalle, MensajeListar)
+                               UserActualizar, MensajeCrear, MensajeDetalle, MensajeListar, infoper)
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pagina/', index, name="pagina_index" ),
+    path('pagina/infopersonal/', infoper, name="pagina_infopersonal" ),
     path('pagina/listar/', PostListar.as_view(), name="pagina_listar"),
     path('pagina/crear/', PostCrear.as_view(), name="pagina_crear"),
     path('pagina/<int:pk>/actualizar/', PostActualizar.as_view(), name="pagina_actualizar"),
