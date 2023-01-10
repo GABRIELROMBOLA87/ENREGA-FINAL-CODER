@@ -39,6 +39,7 @@ urlpatterns = [
     path('pagina/mensajes/crear/', MensajeCrear.as_view(), name="pagina_mensajes_crear"),
     path('pagina/mensajes/<int:pk>/detalle/', MensajeDetalle.as_view(), name="pagina_mensajes_detalle"),
     path('pagina/mensajes/listar/', MensajeListar.as_view(), name="pagina_mensajes_listar"),
+    
     ]
 
 
