@@ -40,12 +40,14 @@
                         {% if user.is_authenticated %}
                             
                             <li class="nav-item"><a class="nav-link" href="{% url 'pagina_listar' %}">Admin Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'pagina_mensajes_crear' %}">Mensajes</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'pagina_logout' %}">Salir</a></li>
                             
                         {% else %}
+
                             <li class="nav-item"><a class="nav-link" href="{% url 'pagina_login' %}">Ingresar</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'pagina_signup' %}">Registrarme</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'pagina_mensajes_crear' %}">Dejar Mensajes</a></li>
+                            
                         {% endif %}
                     </ul>
                 </div>
